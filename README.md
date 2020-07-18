@@ -1,1 +1,1 @@
-# todoListAndroid
+# Built a android Todo list app. Which takes Tittle and Description and it store data into database. If your one of "TODO" work is done click on checkbox then it will be gred out (It means we already did that work).
