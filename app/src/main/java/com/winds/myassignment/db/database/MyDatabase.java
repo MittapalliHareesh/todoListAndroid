@@ -12,7 +12,7 @@ import com.winds.myassignment.db.entity.SavedTodoItem;
     SavedTodoItem.class}, version = AppConstants.DATABASE_VERSION, exportSchema = false)
 public abstract class MyDatabase extends RoomDatabase {
 
-  private static String DATABASE_NAME = "MyDatabaseName2";
+  private static String DATABASE_NAME = "MyDatabase";
 
   private static MyDatabase dbInstance = null;
 
