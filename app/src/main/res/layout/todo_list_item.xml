@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/todoListItem"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/title_txtView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginStart="@dimen/_8dp"
+    android:text="@string/hint_title"
+    android:textSize="@dimen/_16sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+    android:id="@+id/description_txtView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginStart="@dimen/_8dp"
+    android:text="@string/hint_desc"
+    android:textSize="@dimen/_16sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title_txtView"/>
+
+
+  <androidx.appcompat.widget.AppCompatCheckBox
+    android:id="@+id/checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16dp"
+    android:layout_marginEnd="@dimen/_8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

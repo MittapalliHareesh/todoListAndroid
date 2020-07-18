@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/todo_txView"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16dp"
+    android:text="@string/todo_List"
+    android:textColor="@color/color_black"
+    android:textSize="@dimen/_25sp"
+    app:layout_constraintBottom_toBottomOf="@+id/add_button"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <Button
+    android:id="@+id/add_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_24dp"
+    android:layout_marginEnd="@dimen/_8dp"
+    android:text="@string/button_add"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteY="23dp"/>
+
+  <EditText
+    android:id="@+id/search_edt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginStart="@dimen/_8dp"
+    android:layout_marginEnd="@dimen/_8dp"
+    android:padding="@dimen/_8dp"
+    android:background="@drawable/background_grey_border"
+    android:hint="@string/search_hint"
+    android:maxLines="1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/todo_txView"/>
+
+  <View
+    android:id="@+id/ViewPuller"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_marginTop="@dimen/_32dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_grey"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/search_edt"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rcv_todoList"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/_8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ViewPuller">
+  </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

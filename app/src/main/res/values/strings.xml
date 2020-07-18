@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">MyAssignment</string>
+  <string name="todo_List">Todo List</string>
+  <string name="new_todo_item">New Todo Item</string>
+  <string name="button_add">Add</string>
+  <string name="hint_title">Title</string>
+  <string name="hint_desc">Description</string>
+  <string name="cancel">Cancel</string>
+  <string name="done">Done</string>
+  <string name="search_hint">Search for Todo Items</string>
+  <string name="item_added_To_list">Hey, Your item added to TODO list</string>
+  <string name="not_added">Hey, Your item not added TODO list</string>
+  <string name="tittle_empty">Hey, Please fill a Title to add item to your TODO list</string>
+</resources>
